@@ -1,7 +1,7 @@
 {
   "name": "validate-git-commit-message",
   "version": "0.1.0",
-  "author": "Frederik Krautwald",
+  "author": "Yun",
   "description": "GIT COMMIT-MSG hook for validating commit message.",
   "license": "Unlicense",
   "repository": {
@@ -12,18 +12,11 @@
     "git",
     "message validation"
   ],
-  "bin": {
-    "validate-commit-msg": "./bin/validate-commit-msg.js"
-  },
   "dependencies": {},
   "devDependencies": {
     "cli-release": "^1.0.0"
   },
   "scripts": {
-    "hook": "ln -s ../../lib/validate-commit-msg.js .git/hooks/commit-msg",
-    "prehook": "rm -f .git/hooks/commit-msg",
-    "posthook": "chmod +x .git/hooks/commit-msg",
-    "start": "npm install && npm run hook",
     "patch": "release patch",
     "minor": "release minor",
     "major": "release major",
