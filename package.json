@@ -1,13 +1,12 @@
 {
-  "name": "validate-commit-message",
-  "version": "3.0.1",
+  "name": "validate-git-commit-message",
+  "version": "0.0.1",
   "author": "Frederik Krautwald",
   "description": "GIT COMMIT-MSG hook for validating commit message.",
   "license": "Unlicense",
-  "bugs": "https://github.com/Frikki/validate-commit-message/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Frikki/validate-commit-message"
+    "url": "https://github.com/wangyun1517/validate-commit-message"
   },
   "keywords": [
     "git",
@@ -27,6 +26,8 @@
     "start": "npm install && npm run hook",
     "patch": "release patch",
     "minor": "release minor",
-    "major": "release major"
+    "major": "release major",
+    "install": "node ./bin/install.js",
+    "uninstall": "node ./bin/uninstall.js"
   }
 }
