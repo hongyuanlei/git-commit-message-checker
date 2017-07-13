@@ -12,15 +12,18 @@
     "git",
     "message validation"
   ],
-  "dependencies": {},
+  "bin": {
+    "validate-git-commit-msg": "./lib/validate-git-commit-msg.js"
+  },
+  "dependencies": {
+    "find-parent-dir": "^0.3.0"
+  },
   "devDependencies": {
     "cli-release": "^1.0.0"
   },
   "scripts": {
     "patch": "release patch",
     "minor": "release minor",
-    "major": "release major",
-    "install": "node ./bin/install.js",
-    "uninstall": "node ./bin/uninstall.js"
+    "major": "release major"
   }
 }
