@@ -1,6 +1,6 @@
 {
   "name": "validate-git-commit-message",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "Yun",
   "description": "GIT COMMIT-MSG hook for validating commit message.",
   "license": "Unlicense",
