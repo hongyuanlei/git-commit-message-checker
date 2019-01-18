@@ -1,18 +1,15 @@
 # git-commit-message-checker
 
-
-### Validate rules:
-- `[CardNumber] author: commit purpose `
-- `[CardNumber] author1 & author2: commit purpose`
+git-commit-message-checker is a tools for checking whether your commit message is valid or not. If not, your commit will fail.
 
 ## Installation
 
 ```shell
-yarn add -D git-commit-message-checker
+npm install --save-dev git-commit-message-checker
 ```
 
 ## How to use
-  This `validate` need to be used with [Husky](https://github.com/typicode/husky) .
+  git-commit-message-checker need to be used with [Husky](https://github.com/typicode/husky).
   Add this config to package.json
   ```
   "scripts": {
@@ -20,3 +17,17 @@ yarn add -D git-commit-message-checker
      ....
   }
   ```
+
+### --pattern
+The default commit message `pattern` is:
+
+    /^\[[\w-]*\]\s\w*(\s&\s\w*)?\s?:.*/
+
+It can allow the commit message like this:
+
+- `[CardNumber] author: commit purpose`
+- `[CardNumber] author1 & author2: commit purpose`
+
+### --max-length
+
+The default commit message `max-length` is `150`, you can change it in the command line
