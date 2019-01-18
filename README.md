@@ -1,4 +1,4 @@
-# validate-git-commit-message
+# git-commit-message-checker
 
 
 ### Validate rules:
@@ -8,7 +8,7 @@
 ## Installation
 
 ```shell
-yarn add -D validate-git-commit-message
+yarn add -D git-commit-message-checker
 ```
 
 ## How to use
