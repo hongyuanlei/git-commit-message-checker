@@ -1,19 +1,19 @@
 {
-  "name": "validate-git-commit-message",
-  "version": "2.0.1",
-  "author": "Yun",
+  "name": "git-commit-message-checker",
+  "version": "1.0.0",
+  "author": "Yuanlei Hong",
   "description": "GIT COMMIT-MSG hook for validating commit message.",
   "license": "Unlicense",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wangyun1517/validate-commit-message"
+    "url": "https://github.com/hongyuanlei/git-commit-message-checker"
   },
   "keywords": [
     "git",
     "message validation"
   ],
   "bin": {
-    "validate-git-commit-msg": "./lib/validate-git-commit-msg.js"
+    "check-git-commit-msg": "./lib/check-git-commit-msg.js"
   },
   "dependencies": {
     "find-parent-dir": "^0.3.0",
