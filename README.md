@@ -16,7 +16,7 @@ yarn add -D git-commit-message-checker
   Add this config to package.json
   ```
   "scripts": {
-     "commitmsg": "validate-git-commit-msg",
+     "commitmsg": "git-commit-msg-checker --max-length=150 --pattern=\"/^\[[\w-]*\]\s\w*(\s&\s\w*)?\s?:.*/\"",
      ....
   }
   ```
